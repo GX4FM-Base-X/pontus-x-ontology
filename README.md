@@ -2,6 +2,48 @@
 
 Guide to the ontology of the metadata in Pontus-X, based on Ocean Protocol. For details follow the original Ocean Protocol documentation under docs.oceanprotocol.com and docs.pontus-x.eu
 
+# Metadata
+
+Metadata plays a **crucial role** in asset **discovery**, providing essential information such as **asset type, name, creation date, and licensing details**. Each data asset can have a decentralized identifier (DID) that resolves to a DID document (DDO) containing associated metadata. In Pontus-X two DDOs exists for each DID, one Ocean Protocol specific DDO and one Gaia-X specific service credential. The DDO is essentially a collection of fields in a [JSON](https://www.json.org/) object. To understand working with Ocean Protocol DIDs, you can refer to the DID documentation (below). For a more comprehensive understanding of metadata structure, the DDO specification documentation (below) provides in-depth information.
+
+In general, any service within the Ocean and Pontus-X ecosystem is required to store metadata for every listed dataset. The metadata is useful to determine which services are relevant.
+
+So, for example, imagine you're searching for data on Spanish almond production in an Ocean-powered data space. You might find a large number of datasets, making it difficult to identify the most relevant one. What can we do about it? :thinking: This is where metadata is useful! The metadata provides valuable information that helps you identify the most relevant dataset. This information can include:
+
+* **name**, e.g. “Largueta Almond Production: 1995 to 2005”
+* **dateCreated**, e.g. “2007–01–20”
+* **datePublished**, e.g. “2022–11–10T12:32:15Z”
+* **author**, e.g. “Spanish Almond Board”
+* **license**, e.g. “SAB Data License”
+* technical information about the **files**, such as the content type.
+
+Other metadata might also be available. For example:
+
+* **categories**, e.g. \[“agriculture”, “economics”]
+* **tags**, e.g. \[“Europe”, “Italy”, “nuts”, “almonds”]
+* **description**, e.g. “2002 Italian almond production statistics for 14 varieties and 20 regions.”
+* **additionalInformation** can be used to store any other facts about the asset.
+
+
+### **Overview for DIDs and DDOs**
+
+DIDs and DDOs follow the [specification defined by the World Wide Web Consortium (W3C)](https://w3c-ccg.github.io/did-spec/).
+
+[**Decentralized identifiers**](identifiers.md) (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity, and DIDs may represent humans, objects, and more. A **DID Document** (DDO) is a JSON blob that holds information about the DID. Given a DID, a _resolver_ will return the DDO of that DID.
+
+Decentralized identifiers (DIDs) are a type of identifier that enable verifiable, decentralized digital identity. Each DID is associated with a unique entity, and DIDs may represent humans, objects, and more.
+
+#### Rules for DID & DDO
+
+An _asset_ in Ocean represents a downloadable file, compute service, or similar. Each asset is a _resource_ under the control of a _publisher_. The Ocean network itself does _not_ store the actual resource (e.g. files).
+
+An _asset_ has a DID and DDO. The DDO should include metadata about the asset, and define access in at least one [service](ddo-specification.md#services). Only _owners_ or _delegated users_ can modify the DDO.
+
+All DDOs are stored on-chain in encrypted form to be fully GDPR-compatible. A metadata cache like [_Aquarius_](aquarius/README.md) can help in reading, decrypting, and searching through encrypted DDO data from the chain. Because the file URLs are encrypted on top of the full DDO encryption, returning unencrypted DDOs e.g. via an API is safe to do as the file URLs will still stay encrypted.
+
+
+
+
 # Identifiers (DIDs)
 
 ### Identifiers
