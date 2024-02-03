@@ -1,6 +1,14 @@
 # Pontus-X Ontology based on Ocean Protocol
 
-Guide to the ontology of the metadata in Pontus-X, based on Ocean Protocol. For details follow the original Ocean Protocol documentation under docs.oceanprotocol.com and docs.pontus-x.eu
+Guide to the ontology of the metadata in Pontus-X, based on Ocean Protocol. For details follow the original [Ocean Protocol documentation under docs.oceanprotocol.com](https://docs.oceanprotocol.com) and [docs.pontus-x.eu](https://docs.pontus-x.eu/).
+
+**Ocean Aquarius**, the metadata cache of Ocean Protocol, is an off-chain, multi-chain cache for metadata that is published on chain, connected to an Elasticsearch database. Aquarius continually monitors the chains for MetadataCreated and MetadataUpdated events, processes these events and adds them to the database. The Aquarius API offers a convenient way to access the medatata without scanning the chain yourself. 
+Ocean Protocol metadata verification is also located here. 
+Repository: [https://github.com/oceanprotocol/aquarius/tree/main](https://github.com/oceanprotocol/aquarius/tree/main)
+
+**Ocean DID Documentation**, can be found here: [https://docs.oceanprotocol.com/developers/identifiers](https://docs.oceanprotocol.com/developers/identifiers)
+
+**Ocean DDO Documentation**, can be found here: [https://docs.oceanprotocol.com/developers/ddo-specification](https://docs.oceanprotocol.com/developers/ddo-specification)
 
 # Metadata
 
