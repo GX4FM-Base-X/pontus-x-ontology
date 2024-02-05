@@ -10,6 +10,8 @@ Repository: [https://github.com/oceanprotocol/aquarius/tree/main](https://github
 
 **Ocean DDO Documentation**, can be found here: [https://docs.oceanprotocol.com/developers/ddo-specification](https://docs.oceanprotocol.com/developers/ddo-specification)
 
+For Reference and Comparison also the [Gaia-X Ontology and Shapes](https://gitlab.com/gaia-x/lab/compliance/gx-registry/-/tree/development/src/static/shapes) have been added. They are provided under [Eclipse Public License - v 2.0](https://gitlab.com/gaia-x/lab/compliance/gx-registry/-/blob/development/LICENSE).
+
 # Metadata
 
 Metadata plays a **crucial role** in asset **discovery**, providing essential information such as **asset type, name, creation date, and licensing details**. Each data asset can have a decentralized identifier (DID) that resolves to a DID document (DDO) containing associated metadata. In Pontus-X two DDOs exists for each DID, one Ocean Protocol specific DDO and one Gaia-X specific service credential. The DDO is essentially a collection of fields in a [JSON](https://www.json.org/) object. To understand working with Ocean Protocol DIDs, you can refer to the DID documentation (below). For a more comprehensive understanding of metadata structure, the DDO specification documentation (below) provides in-depth information.
