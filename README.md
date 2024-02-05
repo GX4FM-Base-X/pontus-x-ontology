@@ -10,7 +10,9 @@ Repository: [https://github.com/oceanprotocol/aquarius/tree/main](https://github
 
 **Ocean DDO Documentation**, can be found here: [https://docs.oceanprotocol.com/developers/ddo-specification](https://docs.oceanprotocol.com/developers/ddo-specification)
 
-For Reference and Comparison also the [Gaia-X Ontology and Shapes](https://gitlab.com/gaia-x/lab/compliance/gx-registry/-/tree/development/src/static/shapes) have been added. They are provided under [Eclipse Public License - v 2.0](https://gitlab.com/gaia-x/lab/compliance/gx-registry/-/blob/development/LICENSE).
+For Reference and Comparison also the **[Gaia-X Ontology and Shapes](https://gitlab.com/gaia-x/lab/compliance/gx-registry/-/tree/development/src/static/shapes)** have been added. They are provided under [Eclipse Public License - v 2.0](https://gitlab.com/gaia-x/lab/compliance/gx-registry/-/blob/development/LICENSE).
+
+Since [Pontus-X](https://www.pontus-x.eu/) is building on the Ethereum ecosystem, wie also use the **[Ethereum Ontology](https://ethon.consensys.io/index.html)** with regard to participant identification, ERC20 tokens and smart contract implementations.
 
 # Metadata
 
