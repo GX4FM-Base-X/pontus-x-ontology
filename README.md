@@ -1,4 +1,4 @@
-# Pontus-X Ontology based on Ocean Protocol
+# Pontus-X Ontology based on Ocean Protocol and Gaia-X
 
 Guide to the ontology of the metadata in Pontus-X, based on Ocean Protocol. For details follow the original [Ocean Protocol documentation under docs.oceanprotocol.com](https://docs.oceanprotocol.com) and [docs.pontus-x.eu](https://docs.pontus-x.eu/).
 
